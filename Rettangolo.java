@@ -1,12 +1,10 @@
 public class Rettangolo extends  Forma {
     private int base;
     private int altezza;
-    private int area;
 
-    public Rettangolo (int base, int altezza) {
+    public Rettangolo(int base, int altezza) {
         this.base = base;
         this.altezza = altezza;
-        area = base * altezza;
     }
 
     public int getBase() {
@@ -26,9 +24,8 @@ public class Rettangolo extends  Forma {
     }
 
     @Override
-    public int getArea() {
-        return area;
+    public void calcolaArea() {
+        super.calcolaArea();
+        System.out.println(base * altezza);
     }
-
-
 }
